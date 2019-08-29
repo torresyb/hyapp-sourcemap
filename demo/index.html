@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>sourcMap tools</title>
+	<script>
+    window.onerror = function (msg, url, line, col, error) {
+      console.log('msg:', msg, '\nurl:', url, '\nline:', line, '\ncol:', col, '\nerr:', error)
+    }
+	</script>
+</head>
+<body>
+<div id="app">
+	这是一个案例
+</div>
+<script src="./dist/app.min.js"></script>
+</body>
+</html>
