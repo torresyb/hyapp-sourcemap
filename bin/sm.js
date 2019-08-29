@@ -29,16 +29,11 @@ if(optionsLen != 3){
   program.help()
   return
 }
-// 获取命令行文件路径，行，列
+// 获取命令行文件路径，行，列，并输入源码信息
 const file = program.args[0]
 const line = Number(program.args[1])
 const column = Number(program.args[2])
-readMapFile(file, line, column).then(({source, line, column, name, sourceContent}) => {
-  // 源码组装成数组，方便console.log输出
-  let lines = sourceContent.split('\n')
-  lines = lines.map(item => {
-    return item+'\n'
-  })
+readMapFile(file, line, column).then(({source, line, column, name, lines}) => {
   // ~~~~~~~~~~~~~~~    命令行输出
   console.log(chalk.blue('★') + chalk.greenBright('sourceFilePath') + ': ' + chalk.yellowBright(source));
   console.log(chalk.blue('★') + chalk.greenBright('line') + ': ' + chalk.yellowBright(line));
