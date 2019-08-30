@@ -1,6 +1,6 @@
 {
   "name": "hyapp-sourcemap",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "catch error,a tools of sourceMap",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
   "devDependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.0",
+    "glob": "^7.1.4",
     "inquirer": "^7.0.0",
     "source-map": "^0.7.3"
   }
