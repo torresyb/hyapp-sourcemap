@@ -1,6 +1,6 @@
 {
   "name": "hyapp-sourcemap",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "catch error,a tools of sourceMap",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
