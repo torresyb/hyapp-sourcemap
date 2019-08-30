@@ -41,9 +41,9 @@ readMapFile(file, line, column).then(({source, line, column, name, lines}) => {
   console.log(chalk.blue('★') + chalk.greenBright('name') + ': ' + chalk.yellowBright(name));
   console.log('--------start 错误代码--------')
   console.log(
-    chalk.hex('#fff')(lines.slice((line-5 < 0) ? 0 : (line-5), line-1).join('')) +
+    chalk.cyanBright(lines.slice((line-5 < 0) ? 0 : (line-5), line-1).join('')) +
     chalk.red('*' + lines[line-1]) +
-    chalk.hex('#fff')(lines.slice(line, line+5).join(''))
+    chalk.cyanBright(lines.slice(line, line+5).join(''))
   )
   console.log('--------end 错误代码--------')
 }).catch(err => {
